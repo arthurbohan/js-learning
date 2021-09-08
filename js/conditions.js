@@ -32,5 +32,5 @@ switch (num4) {
         break;
     default:
         console.log('its not a time to find');
-        break;    
+        break;
 };
