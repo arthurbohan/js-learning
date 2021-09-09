@@ -50,7 +50,7 @@ function rememberMyFilms() {
 rememberMyFilms();
 
 function writeYourGeners() {
-    for (let i = 0; i <= 3; i++) {
+    for (let i = 1; i <= 3; i++) {
         personalMovieDB.geners[i - 1] = prompt(`Your favorite ganre number ${i}`);
     }
 }
