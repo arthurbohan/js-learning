@@ -1,6 +1,20 @@
 'use strict';
 
-const numberOfFilms = +prompt('How much films did u see?', '');
+const numberOfFilms = +prompt('How much films did you watch?', '');
+
+// function calcNumberOfFilms(){
+//     let numberOfFilms = +prompt('How much films did you watch?', '');
+//     return numberOfFilms;
+// }
+
+// const numberOfFilms = calcNumberOfFilms();
+// console.log(numberOfFilms);
+
+// function askNumberOffilms(arg) {
+    // arg = +prompt('How much films did you watch?', '');
+// }
+
+// askNumberOffilms(numberOfFilms);
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -10,15 +24,19 @@ const personalMovieDB = {
     privat: false
 };
 
+// for (let i = 0; i < 1; i++) {
+// askNumberOffilms(numberOfFilms);
 if (personalMovieDB.count < 10) {
-    console.log('U see too not many films');
+    console.log('U see not many films');
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
     console.log('U are class viewer');
 } else if (personalMovieDB.count >= 30) {
     console.log('U are movie fan');
 } else {
     console.log('Error');
+    // i--;
 }
+// }
 
 
 for (let i = 0; i < 2; i++) {
