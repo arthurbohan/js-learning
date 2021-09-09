@@ -1,4 +1,4 @@
-'user strict';
+'use strict';
 
 const numberOfFilms = +prompt('How much films did u see?', '');
 
@@ -11,7 +11,7 @@ const personalMovieDB = {
 };
 
 if (personalMovieDB.count < 10) {
-    console.log('U see too small films');
+    console.log('U see too not many films');
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
     console.log('U are class viewer');
 } else if (personalMovieDB.count >= 30) {
