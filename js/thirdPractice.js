@@ -49,14 +49,6 @@ function rememberMyFilms() {
 
 rememberMyFilms();
 
-function showMyDB() {
-    if (personalMovieDB.privat == false) {
-        console.log(personalMovieDB);
-    }
-}
-
-showMyDB();
-
 function writeYourGeners() {
     for (let i = 0; i <= 3; i++) {
         personalMovieDB.geners[i - 1] = prompt(`Your favorite ganre number ${i}`);
@@ -66,10 +58,17 @@ function writeYourGeners() {
 writeYourGeners();
 
 
-// function showMyDB(hidden){
-//     if(!hidden){
-//         console.log(personalMovieDB); 
+// function showMyDB() {
+//     if (personalMovieDB.privat == false) {
+//         console.log(personalMovieDB);
 //     }
 // }
-// showMyDB(personalMovieDB.private);
+
+function showMyDB(hidden){
+     if(!hidden){
+         console.log(personalMovieDB); 
+     }
+ }
+
+showMyDB(personalMovieDB.private);
 
