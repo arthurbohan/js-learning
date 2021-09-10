@@ -8,13 +8,16 @@ const options = {
         border: 'black',
         background: 'red'
     },
-    makeTest: function(){
+    makeTest: function () {
         console.log('test');
     }
 };
 
-console.log(Object.keys(options).length);
+// console.log(Object.keys(options).length);
 options.makeTest();
+
+const { border, bg } = options.colors;
+console.log(border);
 
 // delete options.name;
 
