@@ -17,7 +17,7 @@ if (num < 49) {
 }
 
 const num2 = 59;
-function checkNumber(){ 
+function checkNumber() {
     (num2 == 50) ? console.log('its number') : console.log('its not'); // jshint ignore:line
 }
 

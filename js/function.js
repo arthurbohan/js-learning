@@ -11,13 +11,13 @@ function calc(a, b) {
 
 console.log(calc(4, 5));
 
-function ret(){
+function ret() {
     let num = 40;
 
     return num;
 }
 
-const logger = function(){
+const logger = function () {
     console.log('Hello');
 };
 
