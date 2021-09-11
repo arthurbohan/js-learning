@@ -16,7 +16,7 @@ const options = {
 // console.log(Object.keys(options).length);
 options.makeTest();
 
-const { border, bg } = options.colors;
+const { border, bg } = options.colors; //!!!!!!
 console.log(border);
 
 // delete options.name;
