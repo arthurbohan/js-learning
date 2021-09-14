@@ -26,9 +26,13 @@ arr.forEach(function (item, index, arr) {
     console.log(`${index}: ${item} into array ${arr}`);
 });
 
+arr.forEach(function(item){
+    console.log(`${item}`);
+});
 
 const str = prompt('', '');
 const products = str.split(', ');
+console.log(products);
 
 products.sort();
 console.log(products.join('; '));

@@ -13,6 +13,9 @@ function second() {
 first();
 second();
 
+
+//callback functionality
+
 function learnJS(lang, callback) {
     console.log(`Im lerning ${lang}`);
     callback();
