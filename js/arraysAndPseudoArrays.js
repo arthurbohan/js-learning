@@ -10,9 +10,9 @@ arr.sort(compareNum); // for numeric
 console.log(arr); 
 
 //
-arr.pop();
-arr.push(10);
-arr.map();
+// arr.pop();
+// arr.push(10);
+// arr.map();
 
 //
 for (let i = 0; i < arr.length; i++) {
