@@ -15,3 +15,6 @@ function likes(names) {
     }
 }
 
+console.log(likes([]));
+console.log(likes(['Peter']));
+console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']));
