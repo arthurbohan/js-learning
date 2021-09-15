@@ -38,8 +38,34 @@ const personalMovieDB = {
     },
     writeYourGeners: function () {
         for (let i = 1; i <= 3; i++) {
-            personalMovieDB.geners[i - 1] = prompt(`Your favorite ganre number ${i}`);
+            let genre = prompt(`Your favorite ganre number ${i}`);
+
+            if (genre === '' || genre === null) {
+                console.log('You wrote uncorrect value');
+                i--;
+            } else {
+                personalMovieDB.geners[i - 1] = genre;
+            }
         }
+        personalMovieDB.geners.forEach(function (item, i) {
+            console.log(`Lovely genre ${i + 1} - this is ${item}`);
+        });
+    },
+    writeYourGenersWithComma: function () {
+        for (let i = 1; i < 2; i++) {
+            let geners = prompt('Write ur geners with comma');
+            if (geners === '' || geners === null) {
+                console.log('You wrote uncorrect value');
+                i--;
+            } else {
+                personalMovieDB.geners = geners.split(', ');
+                personalMovieDB.geners.sort();
+            }
+        }
+        personalMovieDB.geners.forEach(function (item, i) {
+            console.log(`Lovely genre ${i + 1} - this is ${item}`);
+        });
+
     },
     toggleVisibleMyDB: function () {
         if (personalMovieDB.privat) {
